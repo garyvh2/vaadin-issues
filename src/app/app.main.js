@@ -2,6 +2,7 @@
  * Component Base Elements
  */
 import { LitElement, html } from '@polymer/lit-element';
+import { connect } from 'pwa-helpers/connect-mixin';
 
 /**
  * Route Management
@@ -9,20 +10,22 @@ import { LitElement, html } from '@polymer/lit-element';
 import { init } from './utils/router-helpers';
 import { loadRoutes } from './app.router';
 
+import { store } from './app.store';
 /**
  * Component Importings
  */
 import './components/router';
+import { getUser } from './@redux/routes/selectors';
 
 /**
  * Main Element Definition
  */
-class AppMain extends LitElement {
+class AppMain extends connect(store)(LitElement) {
   /**
      * Element properties mapping
      */
   static get properties() {
-    return {};
+    return { user: Object };
   }
 
   /**
@@ -58,6 +61,10 @@ class AppMain extends LitElement {
   _didRender() {
     init(this.shadowRoot.querySelector('router-outlet'));
     loadRoutes();
+  }
+
+  _stateChanged(state) {
+    this.user = getUser(state);
   }
 }
 customElements.define('app-main', AppMain);

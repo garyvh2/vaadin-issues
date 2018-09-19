@@ -24,7 +24,7 @@ export const routerReducer = (state = getInitialState, action) => {
 export const authReducer = (state = Map({}), action) => {
   switch (action.type) {
     case LOGIN_SUCCESS:
-      return state.set('user', fromJS(action.data));
+      return state.set('user', fromJS(action.user));
     default:
       return state;
   }
