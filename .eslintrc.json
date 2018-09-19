@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "airbnb-base"
+  ],
+  "rules": {
+    "import/no-cycle": "off",
+    "linebreak-style": ["error", "windows"],
+    "import/prefer-default-export": "off",
+    "array-element-newline": "off",
+    "object-curly-newline": ["error", {
+      "ObjectExpression": {
+        "multiline": true,
+        "minProperties": 3
+      },
+      "ObjectPattern": {
+        "multiline": true,
+        "minProperties": 2
+      },
+      "ImportDeclaration": "never",
+      "ExportDeclaration": {
+        "multiline": true
+      }
+    }],
+    "class-methods-use-this": "off",
+    "no-plusplus": ["error", {
+      "allowForLoopAfterthoughts": true
+    }]
+  },
+  "env": {
+    "browser": true
+  },
+  "plugins": [
+    "prettier"
+  ]
+}

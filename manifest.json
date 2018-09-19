@@ -1,0 +1,7 @@
+{
+  "name": "vaadin-issues",
+  "short_name": "vaadin-issues",
+  "description": "This application is focused on the reporting of issues about Vaadin components",
+  "start_url": "/",
+  "display": "standalone"
+}

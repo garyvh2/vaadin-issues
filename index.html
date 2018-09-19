@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+  <title>vaadin-issues</title>
+  <meta name="description" content="This application is focused on the reporting of issues about Vaadin components">
+
+  <script>
+    // HACK(keanulee): The Redux package assumes `process` exists - mock it here before
+    // the module is loaded.
+    window.process = {
+      env: {
+        NODE_ENV: 'production'
+      }
+    };
+  </script>
+
+  <!-- See https://goo.gl/OOhYW5 -->
+  <link rel="manifest" href="/manifest.json">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+  <script type="module" src="/src/app/app.main.js" crossorigin></script>
+</head>
+
+<body>
+  <app-main></app-main>
+</body>
+
+</html>

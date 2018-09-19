@@ -1,0 +1,9 @@
+export const PUSH_STATE = 'bdxlive/router/push';
+export const REPLACE_STATE = 'bdxlive/router/replace';
+export const GO = 'bdxlive/router/go';
+export const GO_BACK = 'bdxlive/router/go-back';
+export const GO_FORWARD = 'bdxlive/go-forward';
+export const CHANGE_LOCATION = 'bdxlive/router/change-location';
+export const LAST_LOCATION = 'bdxlive/router/last-location';
+export const LOGIN_REQUEST = 'bdxlive/router/login-request';
+export const LOGIN_SUCCESS = 'bdxlive/router/loggin-success';

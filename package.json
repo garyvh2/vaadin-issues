@@ -1,0 +1,26 @@
+{
+  "name": "vaadin-issues",
+  "description": "This application is focused on the reporting of issues about Vaadin components",
+  "dependencies": {
+    "@polymer/lit-element": "^0.5.2",
+    "@polymer/polymer": "^3.0.0",
+    "@vaadin/router": "^1.1.0",
+    "@vaadin/vaadin-button": "^2.1.0",
+    "immutable": "^4.0.0-rc.9",
+    "polymer-cli": "^1.8.0",
+    "polyserve": "^0.27.12",
+    "pwa-helpers": "^0.8.3",
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "wct-browser-legacy": "^1.0.0"
+  }
+}

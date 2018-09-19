@@ -1,0 +1,4 @@
+# Valid
+**/*.router.js
+**/*.routes.js
+**/*.location.js
