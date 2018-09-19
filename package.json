@@ -1,5 +1,6 @@
 {
   "name": "vaadin-issues",
+  "main": "src/app/app.main.js",
   "description": "This application is focused on the reporting of issues about Vaadin components",
   "dependencies": {
     "@polymer/lit-element": "^0.5.2",
